@@ -9,7 +9,7 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Hoja de estilos -->
-    <link rel="stylesheet" href="../estilos/sytless.css">
+    <link rel="stylesheet" href="../../estilos/sytless.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="../../index.html">
                 <span></span> Patitas Felices
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -25,23 +25,53 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link" href="paginas/mascotas.html">Mascotas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="paginas/adoptar.html">Cómo adoptar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="paginas/contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../mascotas.html">Mascotas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../adoptar.html">Cómo adoptar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contacto.html">Contacto</a></li>
 
                     <li class="nav-item">
-                    <!-- JS(data-bs-toggle="modal" data-bs-target="#modalAdopcion") -->
-                        <button class="btn custom-btn">Registrate</button>
+                        <a href="login.html" class="btn custom-btn">Salir</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     
-    <main>
-
-        
-        
+    <main class="container my-5">
+        <h2 class="mb-4">Panel de Administración</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">Dashboard</a>
+                    <a href="#" class="list-group-item list-group-item-action">Mascotas</a>
+                    <a href="#" class="list-group-item list-group-item-action">Solicitudes</a>
+                    <a href="#" class="list-group-item list-group-item-action">Usuarios</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header">
+                        Resumen
+                    </div>
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <h3>24</h3>
+                                <p>Mascotas disponibles</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>12</h3>
+                                <p>Solicitudes pendientes</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>156</h3>
+                                <p>Adopciones exitosas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
 
@@ -53,9 +83,9 @@
             </div>
             <p>Hecho con amor para los animales — Refugio desde 2013</p>
             <div class="footer-links">
-                <a href="catalogo.html">Mascotas</a>
-                <a href="#contacto">Proceso</a>
-                <a href="#contacto">Contacto</a>
+                <a href="../mascotas.html">Mascotas</a>
+                <a href="../adoptar.html">Proceso</a>
+                <a href="../contacto.html">Contacto</a>
             </div>
         </div>
     </footer>
@@ -63,7 +93,7 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Js Propio -->
-    <script src="../Avance-1 mrc/Js/script.js"></script>
+    <script src="../../Js/script.js"></script>
 
     
 </body>
