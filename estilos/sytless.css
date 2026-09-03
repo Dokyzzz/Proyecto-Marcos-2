@@ -155,3 +155,66 @@ body {
 .footer-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
 .footer-links a { color: #6c757d; text-decoration: none; margin-left: 1.5rem; transition: color 0.3s; }
 .footer-links a:hover { color: white; }
+
+/* =========================================
+   MEDIA QUERIES (Responsividad)
+   ========================================= */
+
+/* Tablets (hasta 991px) */
+@media (max-width: 991px) {
+    .hero-section h1 { font-size: 2.5rem; }
+    .hero-overlay { padding: 3rem 0; min-height: 70vh; }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-links {
+        margin-top: 1rem;
+    }
+
+    .footer-links a {
+        margin: 0 0.75rem;
+        display: inline-block;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Celulares (hasta 767px) */
+@media (max-width: 767px) {
+    .hero-section h1 { font-size: 2rem; }
+    .hero-overlay { min-height: 60vh; text-align: center; }
+    .hero-buttons { justify-content: center; }
+    .hero-badge { margin: 0 auto 1.5rem auto; display: flex; width: fit-content; }
+    
+    .section-title h2 { font-size: 2rem; }
+    
+    .filter-buttons { justify-content: center; }
+    
+    .banner-adopcion h2 { font-size: 1.8rem; }
+    
+    .contacto-info h2 { font-size: 2rem; text-align: center; }
+    .contacto-info > span { display: block; text-align: center; }
+    
+    .lista-contacto li {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+        align-items: center;
+    }
+}
+
+/* Celulares pequeños (hasta 400px) */
+@media (max-width: 400px) {
+    .hero-section h1 { font-size: 1.75rem; }
+    
+    .custom-btn, .custom-btn-outline {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .card-img-container { height: 200px; }
+    
+    .form-card { padding: 1.25rem; }
+}
