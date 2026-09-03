@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patitas Felices - Inicio</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="../estilos/sytless.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span></span> Patitas Felices
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="paginas/mascotas.html">Mascotas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="paginas/adoptar.html">Cómo adoptar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="paginas/contacto.html">Contacto</a></li>
+
+                    <li class="nav-item">
+                        <!-- JS(data-bs-toggle="modal" data-bs-target="#modalAdopcion") -->
+
+                        <button class="btn custom-btn">Registrate</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div>
+            <!-- Tarjeta 1 -->
+            <div class="col-md-4">
+                <div class="card mascota-card">
+                    <div class="card-img-container">
+                        <img src="../Img/perrito1.jpg" class="img-fluid" alt="Mango">
+                        <span class="badge custom-badge">Juguetón</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Mango</h3>
+                        <span class="mascota-edad">8 meses<br><small>Macho</small></span>
+                        <p class="mascota-raza">Golden Retriever</p>
+                        <p class="mascota-desc">Mango adora correr en el parque y es muy cariñoso con los niños. Está
+                            vacunado y desparasitado.</p>
+                        <div class="card-actions">
+                            <span class="badge size-badge"> Grande</span>
+                            <button class="btn custom-btn" data-bs-toggle="modal"
+                                data-bs-target="#modalAdopcion">Adoptar &rarr;</button>
+                            <button class="btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#modalDetalles" data-nombre="Mango" data-raza="Golden Retriever"
+                                data-edad="8 meses" data-sexo="Macho" data-tamano="Grande" data-personalidad="Juguetón"
+                                data-descripcion="Mango adora correr en el parque y es muy cariñoso con los niños. Está vacunado y desparasitado."
+                                data-imagen="Img/perrito1.jpg">
+                                Ver detalles
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               <main class="container my-5">
+    <div class="row g-4">
+        <!-- Tarjeta 1 -->
+        <div class="col-md-4">
+            <div class="card mascota-card">
+                <div class="card-img-container">
+                    <img src="../Img/perrito1.jpg" class="img-fluid" alt="Mango">
+                    <span class="badge custom-badge">Juguetón</span>
+                </div>
+                <div class="card-body">
+                    <h3>Mango</h3>
+                    <span class="mascota-edad">8 meses<br><small>Macho</small></span>
+                    <p class="mascota-raza">Golden Retriever</p>
+                    <p class="mascota-desc">Mango adora correr en el parque y es muy cariñoso con los niños. Está vacunado y desparasitado.</p>
+                    <div class="card-actions">
+                        <span class="badge size-badge"> Grande</span>
+                        <button class="btn custom-btn" data-bs-toggle="modal"
+                            data-bs-target="#modalAdopcion">Adoptar &rarr;</button>
+                        <button class="btn-outline-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#modalDetalles" data-nombre="Mango" data-raza="Golden Retriever"
+                            data-edad="8 meses" data-sexo="Macho" data-tamano="Grande" data-personalidad="Juguetón"
+                            data-descripcion="Mango adora correr en el parque y es muy cariñoso con los niños. Está vacunado y desparasitado."
+                            data-imagen="../Img/perrito1.jpg">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="col-md-4">
+            <div class="card mascota-card">
+                <div class="card-img-container">
+                    <img src="../Img/perro3.jpg" class="img-fluid" alt="Luna">
+                    <span class="badge custom-badge">Tranquila</span>
+                </div>
+                <div class="card-body">
+                    <h3>Luna</h3>
+                    <span class="mascota-edad">1 año y medio<br><small>Hembra</small></span>
+                    <p class="mascota-raza">Mestiza</p>
+                    <p class="mascota-desc">Luna es muy obediente, le encanta pasear de forma calmada y se lleva excelente con otros animales en casa.</p>
+                    <div class="card-actions">
+                        <span class="badge size-badge"> Mediano</span>
+                        <button class="btn custom-btn" data-bs-toggle="modal"
+                            data-bs-target="#modalAdopcion">Adoptar &rarr;</button>
+                        <button class="btn-outline-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#modalDetalles" data-nombre="Luna" data-raza="Mestiza"
+                            data-edad="1 año y medio" data-sexo="Hembra" data-tamano="Mediano" data-personalidad="Tranquila"
+                            data-descripcion="Luna es muy obediente, le encanta pasear de forma calmada y se lleva excelente con otros animales en casa."
+                            data-imagen="../Img/perro3.jpg">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- Tarjeta 3 -->
+        <div class="col-md-4">
+            <div class="card mascota-card">
+                <div class="card-img-container">
+                    <img src="../Img/perro2.jpg" class="img-fluid" alt="Rocky">
+                    <span class="badge custom-badge">Protector</span>
+                </div>
+                <div class="card-body">
+                    <h3>Rocky</h3>
+                    <span class="mascota-edad">2 años<br><small>Macho</small></span>
+                    <p class="mascota-raza">Pastor Alemán</p>
+                    <p class="mascota-desc">Rocky es un perro muy leal, inteligente y activo. Ideal para hogares con espacio amplio y amantes de las caminatas largas.</p>
+                    <div class="card-actions">
+                        <span class="badge size-badge"> Grande</span>
+                        <button class="btn custom-btn" data-bs-toggle="modal"
+                            data-bs-target="#modalAdopcion">Adoptar &rarr;</button>
+                        <button class="btn-outline-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#modalDetalles" data-nombre="Rocky" data-raza="Pastor Alemán"
+                            data-edad="2 años" data-sexo="Macho" data-tamano="Grande" data-personalidad="Protector"
+                            data-descripcion="Rocky es un perro muy leal, inteligente y activo. Ideal para hogares con espacio amplio y amantes de las caminatas largas."
+                            data-imagen="../Img/perro2.jpg">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tarjeta 4 -->
+        <div class="col-md-4">
+            <div class="card mascota-card">
+                <div class="card-img-container">
+                    <img src="../Img/gato1.jpg" class="img-fluid" alt="Mila">
+                    <span class="badge custom-badge">Curiosa</span>
+                </div>
+                <div class="card-body">
+                    <h3>Mila</h3>
+                    <span class="mascota-edad">6 meses<br><small>Hembra</small></span>
+                    <p class="mascota-raza">Siamés Mix</p>
+                    <p class="mascota-desc">Mila es muy juguetona y le encanta dormir en lugares cálidos. Está esterilizada y lista para encontrar un hogar amoroso.</p>
+                    <div class="card-actions">
+                        <span class="badge size-badge"> Pequeño</span>
+                        <button class="btn custom-btn" data-bs-toggle="modal"
+                            data-bs-target="#modalAdopcion">Adoptar &rarr;</button>
+                        <button class="btn-outline-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#modalDetalles" data-nombre="Mila" data-raza="Siamés Mix"
+                            data-edad="6 meses" data-sexo="Hembra" data-tamano="Pequeño" data-personalidad="Curiosa"
+                            data-descripcion="Mila es muy juguetona y le encanta dormir en lugares cálidos. Está esterilizada y lista para encontrar un hogar amoroso."
+                            data-imagen="../Img/gato1.jpg">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Tarjeta 5 -->
+        <div class="col-md-4">
+            <div class="card mascota-card">
+                <div class="card-img-container">
+                    <img src="../Img/perro4.jpg" class="img-fluid" alt="Toby">
+                    <span class="badge custom-badge">Amigable</span>
+                </div>
+                <div class="card-body">
+                    <h3>Toby</h3>
+                    <span class="mascota-edad">1 año<br><small>Macho</small></span>
+                    <p class="mascota-raza">Cocker Spaniel</p>
+                    <p class="mascota-desc">Toby es sumamente alegre, le fascina jugar con la pelota y convive muy bien con otros perros. Vacunado al día.</p>
+                    <div class="card-actions">
+                        <span class="badge size-badge"> Mediano</span>
+                        <button class="btn custom-btn" data-bs-toggle="modal"
+                            data-bs-target="#modalAdopcion">Adoptar &rarr;</button>
+                        <button class="btn-outline-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#modalDetalles" data-nombre="Toby" data-raza="Cocker Spaniel"
+                            data-edad="1 año" data-sexo="Macho" data-tamano="Mediano" data-personalidad="Amigable"
+                            data-descripcion="Toby es sumamente alegre, le fascina jugar con la pelota y convive muy bien con otros perros. Vacunado al día."
+                            data-imagen="../Img/perro4.jpg">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tarjeta 6 -->
+        <div class="col-md-4">
+            <div class="card mascota-card">
+                <div class="card-img-container">
+                    <img src="../Img/gato2.jpg" class="img-fluid" alt="Cleo">
+                    <span class="badge custom-badge">Tranquila</span>
+                </div>
+                <div class="card-body">
+                    <h3>Cleo</h3>
+                    <span class="mascota-edad">2 años<br><small>Hembra</small></span>
+                    <p class="mascota-raza">Angora Mix</p>
+                    <p class="mascota-desc">Cleo es muy independiente, elegante y de mirada tierna. Disfruta de los ambientes calmados y los espacios acogedores.</p>
+                    <div class="card-actions">
+                        <span class="badge size-badge"> Pequeño</span>
+                        <button class="btn custom-btn" data-bs-toggle="modal"
+                            data-bs-target="#modalAdopcion">Adoptar &rarr;</button>
+                        <button class="btn-outline-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#modalDetalles" data-nombre="Cleo" data-raza="Angora Mix"
+                            data-edad="2 años" data-sexo="Hembra" data-tamano="Pequeño" data-personalidad="Tranquila"
+                            data-descripcion="Cleo es muy independiente, elegante y de mirada tierna. Disfruta de los ambientes calmados y los espacios acogedores."
+                            data-imagen="../Img/gato2.jpg">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 7 -->
+        <div class="col-md-4">
+            <div class="card mascota-card">
+                <div class="card-img-container">
+                    <img src="../Img/perro5.jpg" class="img-fluid" alt="Bruno">
+                    <span class="badge custom-badge">Juguetón</span>
+                </div>
+                <div class="card-body">
+                    <h3>Bruno</h3>
+                    <span class="mascota-edad">4 meses<br><small>Macho</small></span>
+                    <p class="mascota-raza">Beagle Mix</p>
+                    <p class="mascota-desc">Bruno es un cachorro lleno de energía, muy curioso y con muchas ganas de aprender. Vacunado con su primera dosis.</p>
+                    <div class="card-actions">
+                        <span class="badge size-badge"> Mediano</span>
+                        <button class="btn custom-btn" data-bs-toggle="modal"
+                            data-bs-target="#modalAdopcion">Adoptar &rarr;</button>
+                        <button class="btn-outline-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#modalDetalles" data-nombre="Bruno" data-raza="Beagle Mix"
+                            data-edad="4 meses" data-sexo="Macho" data-tamano="Mediano" data-personalidad="Juguetón"
+                            data-descripcion="Bruno es un cachorro lleno de energía, muy curioso y con muchas ganas de aprender. Vacunado con su primera dosis."
+                            data-imagen="../Img/perro5.jpg">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 8 -->
+        <div class="col-md-4">
+            <div class="card mascota-card">
+                <div class="card-img-container">
+                    <img src="../Img/perro6.jpg" class="img-fluid" alt="Simón">
+                    <span class="badge custom-badge">Cariñoso</span>
+                </div>
+                <div class="card-body">
+                    <h3>Simón</h3>
+                    <span class="mascota-edad">3 años<br><small>Macho</small></span>
+                    <p class="mascota-raza">Schnauzer Mix</p>
+                    <p class="mascota-desc">Simón es un perrito tranquilo, muy noble y de excelente compañía para adultos mayores o departamentos. Desparasitado y con todas sus vacunas.</p>
+                    <div class="card-actions">
+                        <span class="badge size-badge"> Mediano</span>
+                        <button class="btn custom-btn" data-bs-toggle="modal"
+                            data-bs-target="#modalAdopcion">Adoptar &rarr;</button>
+                        <button class="btn-outline-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#modalDetalles" data-nombre="Simón" data-raza="Schnauzer Mix"
+                            data-edad="3 años" data-sexo="Macho" data-tamano="Mediano" data-personalidad="Cariñoso"
+                            data-descripcion="Simón es un perrito tranquilo, muy noble y de excelente compañía para adultos mayores o departamentos. Desparasitado y con todas sus vacunas."
+                            data-imagen="../Img/perro6.jpg">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 9 -->
+        <div class="col-md-4">
+            <div class="card mascota-card">
+                <div class="card-img-container">
+                    <img src="../Img/perro7.jpg" class="img-fluid" alt="Lola">
+                    <span class="badge custom-badge">Dulce</span>
+                </div>
+                <div class="card-body">
+                    <h3>Lola</h3>
+                    <span class="mascota-edad">2 años<br><small>Hembra</small></span>
+                    <p class="mascota-raza">Labrador Mix</p>
+                    <p class="mascota-desc">Lola es una perrita sumamente dulce, le encanta recibir mimos y se adapta con mucha facilidad a cualquier hogar. Totalmente sana y vacunada.</p>
+                    <div class="card-actions">
+                        <span class="badge size-badge"> Grande</span>
+                        <button class="btn custom-btn" data-bs-toggle="modal"
+                            data-bs-target="#modalAdopcion">Adoptar &rarr;</button>
+                        <button class="btn-outline-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#modalDetalles" data-nombre="Lola" data-raza="Labrador Mix"
+                            data-edad="2 años" data-sexo="Hembra" data-tamano="Grande" data-personalidad="Dulce"
+                            data-descripcion="Lola es una perrita sumamente dulce, le encanta recibir mimos y se adapta con mucha facilidad a cualquier hogar. Totalmente sana y vacunada."
+                            data-imagen="../Img/perro7.jpg">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <span>🐾</span> <span>Patitas Felices</span>
+            </div>
+            <p>Hecho con amor para los animales — Refugio desde 2013</p>
+            <div class="footer-links">
+                <a href="catalogo.html">Mascotas</a>
+                <a href="#contacto">Proceso</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <div class="modal fade" id="modalDetalles" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detalleNombre">
+                        Detalles de la mascota
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="detalleImagen" class="img-fluid rounded mb-3" alt="Mascota">
+                    <h3 id="detalleNombreGrande"></h3>
+                    <p>
+                        <strong> - Raza:</strong>
+                        <span id="detalleRaza"></span>
+                    </p>
+                    <p>
+                        <strong> - Edad:</strong>
+                        <span id="detalleEdad"></span>
+                    </p>
+                    <p>
+                        <strong> - Sexo:</strong>
+                        <span id="detalleSexo"></span>
+                    </p>
+                    <p>
+                        <strong> - Tamaño:</strong>
+                        <span id="detalleTamano"></span>
+                    </p>
+                    <p>
+                        <strong> - Personalidad:</strong>
+                        <span id="detallePersonalidad"></span>
+                    </p>
+                    <hr>
+                    <h5>Sobre la mascota</h5>
+                    <p id="detalleDescripcion"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                    <button type="button" class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#modalAdopcion">
+                        Adoptar →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Js Propio -->
+    <script src="../Avance-1 mrc/Js/script.js"></script>
+
+
+</body>
+
+</html>

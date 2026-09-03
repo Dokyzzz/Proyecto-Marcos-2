@@ -1,0 +1,69 @@
+const filterButtons = document.querySelectorAll('.filter-buttons .btn');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Alternar la clase 'active' que tú diseñarás en tu CSS
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        const categoria = button.textContent.trim().toLowerCase();
+        const cards = document.querySelectorAll('.mascotas-section .col-md-4');
+
+        cards.forEach(card => {
+            const textoCard = card.textContent.toLowerCase();
+
+            if (categoria === 'todos') {
+                card.style.display = 'block';
+            } else if (categoria === 'perros' && (textoCard.includes('golden') || textoCard.includes('beagle') || textoCard.includes('perro'))) {
+                card.style.display = 'block';
+            } else if (categoria === 'gatos' && (textoCard.includes('gata') || textoCard.includes('siamesa') || textoCard.includes('gato'))) {
+                card.style.display = 'block';
+            } else if (categoria === 'bebés' && textoCard.includes('meses')) {
+                card.style.display = 'block';
+            } else if (categoria === 'adultos' && (textoCard.includes('año') || textoCard.includes('años'))) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+});
+
+const botonesDetalles = document.querySelectorAll('[data-bs-target="#modalDetalles"]');
+
+botonesDetalles.forEach(boton => {
+
+    boton.addEventListener("click", function () {
+
+        document.getElementById("detalleNombre").textContent =
+            this.dataset.nombre;
+
+        document.getElementById("detalleNombreGrande").textContent =
+            this.dataset.nombre;
+
+        document.getElementById("detalleRaza").textContent =
+            this.dataset.raza;
+
+        document.getElementById("detalleEdad").textContent =
+            this.dataset.edad;
+
+        document.getElementById("detalleSexo").textContent =
+            this.dataset.sexo;
+
+        document.getElementById("detalleTamano").textContent =
+            this.dataset.tamano;
+
+        document.getElementById("detallePersonalidad").textContent =
+            this.dataset.personalidad;
+
+        document.getElementById("detalleDescripcion").textContent =
+            this.dataset.descripcion;
+
+        document.getElementById("detalleImagen").src =
+            this.dataset.imagen;
+
+        document.getElementById("detalleImagen").alt =
+            this.dataset.nombre;
+    });
+
+});
